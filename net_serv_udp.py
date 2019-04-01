@@ -31,7 +31,7 @@ if __name__ == '__main__':
 						with open(log_f_tmp, "w") as write_log:
 							date_time = datetime.now()
 							date_mod = datetime.strftime(date_time, "%Y-%m-%d-%H-%M-%S")
-							var_rgz = str(random.randint(1,10))
+							var_rgz = str(random.randint(1,20))
 							db_rgz[user_name] = {
 								"date": date_mod, 
 								"n_var": var_rgz,
