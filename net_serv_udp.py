@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
 	try:
 		with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as sock:
-			sock.bind(("", 40069))
+			sock.bind(("127.0.0.1", 40069))
 			while True:
 				req, addr = sock.recvfrom(1024)
 				if req:
